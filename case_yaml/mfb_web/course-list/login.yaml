@@ -1,0 +1,69 @@
+# 已注册用户登录
+-
+  url: https://www.100.nxdev.cn/
+  login_button:
+    name: xpath
+    value: /html/body/div/div[1]/div/div[2]
+  mobile:
+    name: xpath
+    value: //input[@placeholder="请输入手机号"]
+    txt: 17615270450
+  code:
+    name: xpath
+    value: //input[@placeholder="请输入短信验证码"]
+    txt: 1111
+  confirm_button:
+    name: xpath
+    value: //button[@class="el-button button el-button--primary is-round"]
+  sleep: 3
+  assert:
+    name: xpath
+    value: //div[@class="logo-out"]
+    time_: 10
+
+# 未注册用户登录
+-
+  url: https://www.100.nxdev.cn/
+  login_button:
+    name: xpath
+    value: /html/body/div/div[1]/div/div[2]
+  mobile:
+    name: xpath
+    value: //input[@placeholder="请输入手机号"]
+    txt: 17615270458
+  code:
+    name: xpath
+    value: //input[@placeholder="请输入短信验证码"]
+    txt: 1111
+  confirm_button:
+    name: xpath
+    value: //button[@class="el-button button el-button--primary is-round"]
+  sleep: 3
+  assert:
+    name: xpath
+    value: //div[@class="logo-out"]
+    time_: 10
+
+
+# 手机号填写位数不全时，登录
+-
+  url: https://www.100.nxdev.cn/
+  login_button:
+    name: xpath
+    value: /html/body/div/div[1]/div/div[2]
+  mobile:
+    name: xpath
+    value: //input[@placeholder="请输入手机号"]
+    txt: 1761527045
+  code:
+    name: xpath
+    value: //input[@placeholder="请输入短信验证码"]
+    txt: 1111
+  confirm_button:
+    name: xpath
+    value: //button[@class="el-button button el-button--primary is-round"]
+  sleep: 3
+  assert:
+    name: xpath
+    value: //div[@class="logo-out"]
+    time_: 10
